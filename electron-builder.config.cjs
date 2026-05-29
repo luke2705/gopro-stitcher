@@ -13,6 +13,7 @@ module.exports = {
     '**/node_modules/ffprobe-static/**'
   ],
   win: {
+    icon: 'build/icon.png',
     target: [{ target: 'nsis', arch: ['x64'] }],
     requestedExecutionLevel: 'asInvoker'
   },
@@ -25,10 +26,12 @@ module.exports = {
     createStartMenuShortcut: true
   },
   mac: {
+    icon: 'build/icon.icns',
     target: [{ target: 'dmg', arch: ['x64', 'arm64'] }],
     category: 'public.app-category.video'
   },
   linux: {
+    icon: 'build/icon.png',
     target: ['AppImage']
   }
 }

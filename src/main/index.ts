@@ -47,6 +47,7 @@ function createWindow(): void {
     minHeight: 640,
     frame: false,
     backgroundColor: '#0B0C10',
+    icon: join(__dirname, '../../build/icon.png'),
     show: false,
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
